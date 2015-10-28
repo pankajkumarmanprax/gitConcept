@@ -1,0 +1,32 @@
+Problem:
+Wiki image upload functionality not working.
+
+
+Reason:
+-(devx:Htmleditor) use App_Data folder as a intermediate between actual folder.
+-slice down image file and send it to sharepoint hive in multiple bits to avoid chance of crash .
+
+-"AdvancedModeSettings.TemporaryFolder" to set  temp folder.
+
+
+-temp folder should have all read ,right,overwight access .
+
+
+
+solution:
+
+-make a App_Data/UploadImages folder in Sharepoint hive with full read right access.
+-map it to Site.
+-now specify whaterver path for storing image it will work fine.
+
+e.g:-
+
+<SettingsImageUpload UseAdvancedUploadMode="true"  UploadImageFolder="~/_layouts/15/images/uGovernIT/UploadedFiles/">
+
+
+.....now everthing is done it stat working
+
+
+flaws:
+-we have to hardcode the folder and its perrmissions manually.
+
