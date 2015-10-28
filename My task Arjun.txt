@@ -1,0 +1,8 @@
+/_Layouts/15/Images/uGovernIT/timeline.png
+
+
+
+
+
+Error	37	Error occurred in deployment step 'Add Solution': A feature with ID 15/a1397e5c-e5d8-4201-867a-0ccd9069dc69 has already been installed in this farm.  Use the force attribute to explicitly re-install the feature.
+		0	0	uGovernIT
